@@ -1,18 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client"; // Correct import for React 18
-import Header from "./components/Header"; // Example component
-import Footer from "./components/Footer"; // Example component
-import Note from "./components/Note"; //
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
 
-// Get the root DOM element
-const rootElement = document.getElementById("root");
-
-// Create a root using React 18's new API
-const root = ReactDOM.createRoot(rootElement);
-
-// Render a test component
-root.render(<>
-  <Header />
-  <Note/>
-  <Footer/>
-</>);
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
