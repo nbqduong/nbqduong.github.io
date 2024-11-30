@@ -1,0 +1,16 @@
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: black; /* The color of the cursor */
+    animation: none;
+  }
+
+  .cursor.blinking {
+    animation: blink 1s step-end infinite; /* Add blinking animation when 'blinking' class is added */
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }

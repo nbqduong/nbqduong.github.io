@@ -1,17 +1,17 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
+import Hero from './components/Hero'
 import ButtonGradient from './assets/svg/ButtonGradient'
 
 function App() {
   return (
     <>
+    <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
       <Header />
-      <></>
-      <h1 className = "text-3xl font-bold underline">
-        Vite + React
-      </h1>
+      <Hero />
       <ButtonGradient />
+    </div>
     </>
   )
 }
