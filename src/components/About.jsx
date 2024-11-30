@@ -24,7 +24,7 @@ const About = () => {
   const greeting = getGreeting();
 
   const parallaxRef = useRef(null);
-  const paragraph = "I am passionate about building efficient, reaL-time, user-friendly applications that solve real-world problems. I thrive in collaborative environments focused on productivity and innovation."
+  const paragraph = "I am passionate about building efficient, real-time, user-friendly applications that solve real-world problems. I thrive in collaborative environments focused on productivity and innovation."
   const paragraph2 = greeting;
   return (
     <Section
