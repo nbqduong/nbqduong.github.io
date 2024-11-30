@@ -1,0 +1,14 @@
+./altium.svg
+./autocad.svg
+./c.svg
+./cpp.svg
+./css.svg
+./django.svg
+./expressjs.svg
+./html.svg
+./js.svg
+./opencv.svg
+./opengl.svg
+./python.svg
+./solidworks.svg
+./tailwind.svg

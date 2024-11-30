@@ -4,6 +4,9 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import ButtonGradient from './assets/svg/ButtonGradient'
 import About from './components/About'
+import Skills from './components/Skills'
+import Benefits from './components/Benefits'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -12,6 +15,8 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <Skills />
+      <Footer/>
       <ButtonGradient />
     </div>
     </>

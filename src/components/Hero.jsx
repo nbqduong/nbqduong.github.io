@@ -56,7 +56,6 @@ const Hero = () => {
           <Button href="/pricing" white>
             Get started
           </Button>
-          {/* <BackgroundCircles/> */}
         </div>
         
         

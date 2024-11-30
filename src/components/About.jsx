@@ -7,6 +7,7 @@ import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import AppearingBlock from "./design/BlockDisplay";
 import homeSmile from "../constants";
+import Heading from "./Heading"
 
 
 const About = () => {
@@ -21,19 +22,23 @@ const About = () => {
       customPaddings
       id="about"
     >
+                
         
       <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
 {/* rectangle */}
+
       
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
+          
             <div className="relative bg-n-8 rounded-[1rem]">
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
+              
 
               <AppearingBlock>
-              <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490] relative flex items-center justify-center text-center">
+              <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490] relative flex items-center justify-center text-top">
 
     
-                <h1 className="p-4 text-lg md:text-xl lg:text-2xl leading-relaxed" >
+                <h1 className="p-1 text-lg md:text-xl lg:text-2xl leading-relaxed" >
                     I am a software engineer in Vietnam. In addition, I am interested in the areas of natural language processing and data processing. I write this website in my spare time to practice coding and share my knowledge. I plan to blog about my experience and develop mini apps. Hope you like them
                     <br />
                     <br />A little bit about myself, I love reading books and coding (this is why you see this site). I also love photography, you can find me on Instagram

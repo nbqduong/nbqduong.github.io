@@ -35,6 +35,21 @@ import {
   facebook,
   telegram, 
   linkedin, 
+  altium,
+  autocad,
+  c,
+  cpp,
+  css,
+  django,
+  expressjs,
+  html,
+  js,
+  opencv,
+  opengl,
+  python,
+  solidworks,
+  tailwind,
+
   
 } from "../assets";
 
@@ -85,3 +100,93 @@ export const navigation = [
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 export default homeSmile;
+export const benefits = [
+  {
+    id: "0",
+    title: "Ask anything",
+    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    iconUrl: benefitIcon1,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "1",
+    title: "Improve everyday",
+    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    iconUrl: benefitIcon2,
+    imageUrl: benefitImage2,
+    light: true,
+  },
+  {
+    id: "2",
+    title: "Connect everywhere",
+    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    iconUrl: benefitIcon3,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "3",
+    title: "Fast responding",
+    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    iconUrl: benefitIcon4,
+    imageUrl: benefitImage2,
+    light: true,
+  },
+  {
+    id: "4",
+    title: "Ask anything",
+    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    backgroundUrl: "./src/assets/benefits/card-5.svg",
+    iconUrl: benefitIcon1,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "5",
+    title: "Improve everyday",
+    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    iconUrl: benefitIcon2,
+    imageUrl: benefitImage2,
+  },
+];
+
+export const skills = [
+  {
+    id: "0",
+    title: "Software Development",
+    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    icons: [
+      { src: cpp, alt: "cpp" },
+      { src: css, alt: "css" },
+      { src: html, alt: "html" },
+      { src: js, alt: "js" },
+      { src: opencv, alt: "opencv" },
+      { src: opengl, alt: "opengl" },
+      { src: python, alt: "python" },
+      { src: tailwind, alt: "tailwind" },
+    ],
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "1",
+    title: "Embedded Development",
+    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    icons: [
+      { src: cpp, alt: "cpp" },
+      { src: css, alt: "css" },
+      { src: html, alt: "html" },
+      // { src: js, alt: "js" },
+      // { src: opencv, alt: "opencv" },
+      // { src: opengl, alt: "opengl" },
+      // { src: python, alt: "python" },
+      // { src: tailwind, alt: "tailwind" },
+    ],
+    imageUrl: benefitImage2,
+    light: true,
+  }
+];

@@ -77,6 +77,23 @@ import twitter from "./socials/twitter.svg";
 import linkedin from "./socials/linkedin.svg";
 import logo from "./logo.svg";
 
+//programming tools
+import altium     from "./software/altium.svg";
+import autocad    from "./software/autocad.svg";
+import c          from "./software/c.svg";
+import cpp        from "./software/cpp.svg";
+import css        from "./software/css.svg";
+import django     from "./software/django.svg";
+import expressjs  from "./software/expressjs.svg";
+import html       from "./software/html.svg";
+import js         from "./software/js.svg";
+import opencv     from "./software/opencv.svg";
+import opengl     from "./software/opengl.svg";
+import python     from "./software/python.svg";
+import solidworks from "./software/solidworks.svg";
+import tailwind   from "./software/tailwind.svg";
+
+
 export {
     linkedin,
     logo,
@@ -148,4 +165,18 @@ export {
     instagram,
     telegram,
     twitter,
+    altium,
+    autocad,
+    c,
+    cpp,
+    css,
+    django,
+    expressjs,
+    html,
+    js,
+    opencv,
+    opengl,
+    python,
+    solidworks,
+    tailwind,
 };
