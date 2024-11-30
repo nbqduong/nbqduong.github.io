@@ -25,9 +25,9 @@ const Hero = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
-            Nguyen Bao Quoc {``}
+            Nguyen Bao Quoc Duong {``}
             <span className="inline-block relative">
-            Duong{" "}
+            {" "}
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
@@ -37,7 +37,7 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
+          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8 sm:text-2lg md:text-2xl">
             I am a
             <AffectDisplayText 
             text={"Embedded Software Engineer | Software Engineer."} 
@@ -47,7 +47,11 @@ const Hero = () => {
           
           
         
-            <div> </div>
+            <div>
+
+            <br></br><br></br><br></br>
+
+            </div>
           
           <Button href="/pricing" white>
             Get started
