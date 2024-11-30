@@ -1,11 +1,18 @@
 import React from 'react';
 import { socials } from '../constants';
 import Heading from './Heading';
+import Section from './Section';
 
 const currentYear = new Date().getFullYear();
 function Footer(){
     return(
-        <footer>
+      <Section
+      className="pt-[12rem] -mt-[5.25rem]"
+      crosses
+      crossesOffset="lg:translate-y-[5.25rem]"
+      customPaddings
+      id="contacts"
+    >
             <Heading title = "Contact Information"/>
             <ul className="flex justify-center items-center gap-5 flex-wrap">
               {socials.map((item) => (
@@ -20,7 +27,7 @@ function Footer(){
                 </a>
               ))}
             </ul>
-        </footer>
+        </Section>
     );
 };
 

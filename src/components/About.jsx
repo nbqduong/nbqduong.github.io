@@ -60,7 +60,7 @@ const About = () => {
                 <ul className="hidden absolute -left-[5.5rem] bottom-[1.5rem] px-4 py-3 bg-n-9/40 backdrop-blur border border-n-1/20 rounded-2xl xl:flex items-center space-x-3 text-white">
                     <li className="flex items-center space-x-3">
                     {/* Wrap both the text and the image in a single <a> tag to make them both clickable */}
-                    <a href="#contact" className="flex items-center space-x-3 font-semibold text-lg hover:text-n-1 transition-colors duration-300">
+                    <a href="#contacts" className="flex items-center space-x-3 font-semibold text-lg hover:text-n-1 transition-colors duration-300">
                         {/* Text */}
                         <span>Contact me</span>
                         

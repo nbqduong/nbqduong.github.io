@@ -5,6 +5,8 @@ import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 import {skills} from "../constants";
+import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
+
 
 
 const Skills = () => {
@@ -66,7 +68,9 @@ const Skills = () => {
               </div>
             ))}
           </div>
+          
         </div>
+        <BackgroundCircles/>
       </Section>
       
     );

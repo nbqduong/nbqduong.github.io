@@ -36,7 +36,7 @@ function Header(){
           }`}
         >
           <div className="flex items-center px-3 lg:px-5 xl:px-7 max-lg:py-2">
-            <a className="block w-[10rem] xl:mr-8" href="#hero">
+            <a className="block w-[10rem] xl:mr-8" href="#home">
               Duong Nguyen
             </a>
     
