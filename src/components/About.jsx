@@ -16,9 +16,10 @@ const About = () => {
     if(currentHour > 5 && currentHour <= 7) return "Why you get up so early? Great morning ya?";
     if(currentHour > 7 && currentHour <= 11) return "Wish you have great things this morning";
     if(currentHour > 11 && currentHour <= 13) return "Btw, did you have a lunch?";
-    if(currentHour > 13 && currentHour <= 19) return "Btw, good afternoon!";
-    if(currentHour > 19 && currentHour <= 22) return "Good night✨";
-    return "Btw, why are you still here this time?";
+    if(currentHour > 13 && currentHour <= 17) return "Good afternoon!";
+    if(currentHour > 17 && currentHour <= 20) return "Good everning🌙";
+    if(currentHour > 20 && currentHour <= 23) return "Good night✨";
+    return "Btw, why are you still here this time 😨?";
   }
   const greeting = getGreeting();
 
@@ -67,21 +68,40 @@ const About = () => {
               </div>
               </AppearingBlock>
 
-
               <ScrollParallax isAbsolutelyPositioned>
-                <ul className="hidden absolute -left-[5.5rem] bottom-[1.5rem] px-4 py-3 bg-n-9/40 backdrop-blur border border-n-1/20 rounded-2xl xl:flex items-center space-x-3 text-white">
+              <a href="https://drive.usercontent.google.com/uc?id=1ihBLVtSDZbibWkGtU6CXDAMTXkMmN8hA&export=download" className="flex items-center space-x-3 font-semibold text-lg hover:text-n-1 transition-colors duration-300">
+                <ul className="hidden absolute -left-[6.0rem] bottom-[1.5rem] px-4 py-3 bg-n-9/40 backdrop-blur border border-n-1/20 rounded-2xl xl:flex items-center space-x-3 text-white">
                     <li className="flex items-center space-x-3">
                     {/* Wrap both the text and the image in a single <a> tag to make them both clickable */}
-                    <a href="#contacts" className="flex items-center space-x-3 font-semibold text-lg hover:text-n-1 transition-colors duration-300">
+                    
                         {/* Text */}
-                        <span>Contact me</span>
+                        <span>My CV</span>
                         
                         {/* Smile Icon */}
-                        <img src={homeSmile} width={24} height={25} alt="Smile Icon" />
-                    </a>
+                        {/* <img src={homeSmile} width={24} height={24} alt="Smile Icon" /> */}
+                    
                     </li>
                 </ul>
+                </a>
               </ScrollParallax>
+
+              <ScrollParallax isAbsolutelyPositioned>
+              <a href="#contacts" className="flex items-center space-x-3 font-semibold text-lg hover:text-n-1 transition-colors duration-300">
+                <ul className="hidden absolute -left-[6.0rem] bottom-[5.5rem] px-4 py-3 bg-n-9/40 backdrop-blur border border-n-1/20 rounded-2xl xl:flex items-center space-x-3 text-white">
+                    <li className="flex items-center space-x-3">
+                    {/* Wrap both the text and the image in a single <a> tag to make them both clickable */}
+                    
+                        {/* Text */}
+                        <span>Contact</span>
+                        
+                        {/* Smile Icon */}
+                        {/* <img src={homeSmile} width={24} height={25} alt="Smile Icon" /> */}
+                    
+                    </li>
+                </ul>
+                </a>
+              </ScrollParallax>
+
 
 
               

@@ -53,7 +53,7 @@ const Hero = () => {
 
             </div>
           
-          <Button href="/pricing" white>
+          <Button href="#about" white>
             Get started
           </Button>
         </div>
