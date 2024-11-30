@@ -84,3 +84,4 @@ export const navigation = [
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
+export default homeSmile;

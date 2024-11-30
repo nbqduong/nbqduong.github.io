@@ -1,0 +1,22 @@
+@keyframes popup {
+    0% {
+      visibility: visible; /* Becomes visible when animation starts */
+      opacity: 0;
+      transform: scale(0.2); /* Start very small */
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.01); /* Slight overshoot */
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); /* Settle into place */
+    }
+  }
+  
+  .popup {
+    opacity: 0;
+    transform: scale(0.5); /* Match starting animation state */
+    animation: popup 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+  

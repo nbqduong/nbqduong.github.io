@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './AffectDisplayText.css'
 
-const AffectDisplayText = ({ text, delay = 500, pauseDelay = 3000 }) => {
+const TextByTextDisplay = ({ text, delay = 500, pauseDelay = 10000 }) => {
     const [visibleText, setVisibleText] = useState(' ');
     const [cursorVisible, setCursorVisible] = useState(true);
     const [cursorClass, setCursorClass] = useState(''); // Manage cursor class for blinking
@@ -37,4 +37,4 @@ const AffectDisplayText = ({ text, delay = 500, pauseDelay = 3000 }) => {
             </p>;
 };
 
-export default AffectDisplayText;
+export default TextByTextDisplay;
