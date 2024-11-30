@@ -49,7 +49,10 @@ import {
   python,
   solidworks,
   tailwind,
-
+  arduino,
+  microchip,
+  stm32,
+  mail,
   
 } from "../assets";
 
@@ -63,9 +66,9 @@ export const socials = [
   },
   {
     id: "1",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "https://www.facebook.com/nbqduong.01/",
+    title: "Mail",
+    iconUrl: mail,
+    url: "mailto:nbqduong@gmail.com",
   },
   {
     id: "2",
@@ -167,6 +170,9 @@ export const skills = [
       { src: solidworks, alt: "solidworks" },
       { src: autocad, alt: "autocad" },
       { src: altium, alt: "altium" },
+      { src: arduino, alt: "arduino" },
+      { src: microchip, alt: "microchip" },
+      { src: stm32, alt: "stm32" },
  
     ],
     imageUrl: benefitImage2,

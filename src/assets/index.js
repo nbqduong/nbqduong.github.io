@@ -76,6 +76,7 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 import linkedin from "./socials/linkedin.svg";
 import logo from "./logo.svg";
+import mail from "./mail.svg";
 
 //programming tools
 import altium     from "./software/altium.svg";
@@ -92,9 +93,17 @@ import opengl     from "./software/opengl.svg";
 import python     from "./software/python.svg";
 import solidworks from "./software/solidworks.svg";
 import tailwind   from "./software/tailwind.svg";
+import arduino     from "./software/arduino.svg";
+import microchip from "./software/microchip.svg";
+import stm32   from "./software/stm32.png";
+
+
 
 
 export {
+    arduino,
+    microchip,
+    stm32,
     linkedin,
     logo,
     brainwave,
@@ -179,4 +188,5 @@ export {
     python,
     solidworks,
     tailwind,
+    mail,
 };
