@@ -154,10 +154,28 @@ export const benefits = [
 ];
 
 export const skills = [
+
+  {
+    id: "1",
+    title: "Embedded Development",
+    text: "About 3 years of experience making embedded products mainly in robots and industry fields with multiple languages and tools:",
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    icons: [
+      { src: cpp, alt: "cpp" },
+      { src: c, alt: "c" },
+      { src: opencv, alt: "opencv" },
+      { src: solidworks, alt: "solidworks" },
+      { src: autocad, alt: "autocad" },
+      { src: altium, alt: "altium" },
+ 
+    ],
+    imageUrl: benefitImage2,
+    light: true,
+  },
   {
     id: "0",
     title: "Software Development",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    text: "Although I spent lots of time making embedded products. I also have a great passion and some experience in developing software products with these tools and languages:",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     icons: [
       { src: cpp, alt: "cpp" },
@@ -168,25 +186,10 @@ export const skills = [
       { src: opengl, alt: "opengl" },
       { src: python, alt: "python" },
       { src: tailwind, alt: "tailwind" },
+      { src: django, alt: "django" },
+      { src: expressjs, alt: "expressjs" },
     ],
     imageUrl: benefitImage2,
   },
-  {
-    id: "1",
-    title: "Embedded Development",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
-    icons: [
-      { src: cpp, alt: "cpp" },
-      { src: css, alt: "css" },
-      { src: html, alt: "html" },
-      // { src: js, alt: "js" },
-      // { src: opencv, alt: "opencv" },
-      // { src: opengl, alt: "opengl" },
-      // { src: python, alt: "python" },
-      // { src: tailwind, alt: "tailwind" },
-    ],
-    imageUrl: benefitImage2,
-    light: true,
-  }
+  
 ];

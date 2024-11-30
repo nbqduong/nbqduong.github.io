@@ -11,9 +11,20 @@ import Heading from "./Heading"
 
 
 const About = () => {
-  const parallaxRef = useRef(null);
-  const paragraph = " Embedded Software Engineer and Software Engineer."
+  const getGreeting = () =>{
+    const currentHour = new Date().getHours();
+    if(currentHour > 5 && currentHour <= 7) return "Why you get up so early? Great morning ya?";
+    if(currentHour > 7 && currentHour <= 11) return "Wish you have great things this morning";
+    if(currentHour > 11 && currentHour <= 13) return "Btw, did you have a lunch?";
+    if(currentHour > 13 && currentHour <= 19) return "Btw, good afternoon!";
+    if(currentHour > 19 && currentHour <= 22) return "Good night✨";
+    return "Btw, why are you still here this time?";
+  }
+  const greeting = getGreeting();
 
+  const parallaxRef = useRef(null);
+  const paragraph = "I am passionate about building efficient, reaL-time, user-friendly applications that solve real-world problems. I thrive in collaborative environments focused on productivity and innovation."
+  const paragraph2 = greeting;
   return (
     <Section
       className="pt-[12rem] -mt-[5.25rem]"
@@ -39,9 +50,10 @@ const About = () => {
 
     
                 <h1 className="p-1 text-lg md:text-xl lg:text-2xl leading-relaxed" >
-                    I am a software engineer in Vietnam. In addition, I am interested in the areas of natural language processing and data processing. I write this website in my spare time to practice coding and share my knowledge. I plan to blog about my experience and develop mini apps. Hope you like them
+                    {paragraph}
                     <br />
-                    <br />A little bit about myself, I love reading books and coding (this is why you see this site). I also love photography, you can find me on Instagram
+                    <br />
+                    {paragraph2}
                 </h1>
                 
 
