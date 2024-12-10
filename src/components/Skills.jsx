@@ -6,7 +6,7 @@ import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 import {skills} from "../constants";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
-
+import AppearingBlock from "./design/BlockDisplay";
 
 
 const Skills = () => {
@@ -15,6 +15,7 @@ const Skills = () => {
         <div className="container relative z-2">
           <Heading className="md:max-w-md lg:max-w-2xl" title="My skills" />
 
+        <AppearingBlock>
           {/* Centering the content */}
           <div className="flex flex-wrap justify-center items-center gap-4 mb-10"> {/* Added flex-wrap */}
             {skills.map((item) => (
@@ -44,7 +45,7 @@ const Skills = () => {
                     }
                   </div>
                 </div>
-
+                
                 {item.light && <GradientLight />}
 
                 <div
@@ -63,12 +64,12 @@ const Skills = () => {
                     )}
                   </div>
                 </div>
-
+              
                 <ClipPath />
               </div>
             ))}
           </div>
-          
+          </AppearingBlock>
         </div>
         <BackgroundCircles/>
       </Section>

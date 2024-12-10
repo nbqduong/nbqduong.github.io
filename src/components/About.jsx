@@ -55,10 +55,7 @@ const About = () => {
                     {paragraph}
                     <br />
                     <br />
-                    <TextByTextDisplay 
-                      text={paragraph2}
-                      delay={100} 
-                      />
+                    {paragraph2}
                 </h1>
                 
 
