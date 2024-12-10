@@ -8,6 +8,7 @@ import { useRef } from "react";
 import AppearingBlock from "./design/BlockDisplay";
 import homeSmile from "../constants";
 import Heading from "./Heading"
+import TextByTextDisplay from "./design/AffectDisplayText";
 
 
 const About = () => {
@@ -54,7 +55,10 @@ const About = () => {
                     {paragraph}
                     <br />
                     <br />
-                    {paragraph2}
+                    <TextByTextDisplay 
+                      text={paragraph2}
+                      delay={100} 
+                      />
                 </h1>
                 
 

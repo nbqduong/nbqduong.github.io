@@ -12,7 +12,7 @@ import TextByTextDisplay from "./design/AffectDisplayText";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
-  const paragraph = " Embedded Software Engineer and Software Engineer."
+  const paragraph = " C++ Software Engineer."
 
   return (
     <Section
@@ -40,7 +40,7 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8 sm:text-2lg md:text-2xl">
             I am a
             <TextByTextDisplay 
-            text={"Embedded Software Engineer | Software Engineer."} 
+            text={paragraph} 
             delay={100} 
             />
           </p>

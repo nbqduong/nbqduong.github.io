@@ -21,10 +21,7 @@ const TextByTextDisplay = ({ text, delay = 500, pauseDelay = 10000 }) => {
             currentIndex++;
             if(currentIndex == text.length){setCursorClass('blinking');};
           } else {
-            setTimeout(() => {
-                setCursorClass('blinking');
-                currentIndex = 0; // Reset the index to restart
-              }, pauseDelay);
+            
           }
         }, delay);
     
