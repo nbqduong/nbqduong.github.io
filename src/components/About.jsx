@@ -15,7 +15,7 @@ const About = () => {
   const getGreeting = () =>{
     const currentHour = new Date().getHours();
     if(currentHour > 5 && currentHour <= 7) return "Why you get up so early? Great morning ya?";
-    if(currentHour > 7 && currentHour <= 11) return "Wish you have great things this morning";
+    if(currentHour > 7 && currentHour <= 11) return "Good morning 🌞";
     if(currentHour > 11 && currentHour <= 13) return "Btw, did you have a lunch?";
     if(currentHour > 13 && currentHour <= 17) return "Good afternoon!";
     if(currentHour > 17 && currentHour <= 20) return "Good everning🌙";
@@ -25,7 +25,7 @@ const About = () => {
   const greeting = getGreeting();
 
   const parallaxRef = useRef(null);
-  const paragraph = "I am passionate about building efficient, real-time, user-friendly applications that solve real-world problems. I thrive in collaborative environments focused on productivity and innovation."
+  const paragraph = "I am passionate about building efficient, applications that solve real-world problems. I thrive in collaborative environments focused on productivity and innovation."
   const paragraph2 = greeting;
   return (
     <Section

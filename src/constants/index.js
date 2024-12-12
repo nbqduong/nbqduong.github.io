@@ -160,12 +160,13 @@ export const skills = [
 
   {
     id: "1",
-    title: "Embedded Development",
-    text: "About 3 years of experience making embedded products mainly in robots and industry fields with multiple languages and tools:",
+    title: "C++ Software Development",
+    text: "I aspire to create high-performance products that can use the following language and tools:",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     icons: [
       { src: cpp, alt: "cpp" },
       { src: c, alt: "c" },
+      { src: python, alt: "python" },
       { src: opencv, alt: "opencv" },
       { src: solidworks, alt: "solidworks" },
       { src: autocad, alt: "autocad" },
@@ -180,19 +181,14 @@ export const skills = [
   },
   {
     id: "0",
-    title: "Software Development",
-    text: "Although I spent lots of time making embedded products. I also have a great passion and some experience in developing software products with these tools and languages:",
+    title: "This website",
+    text: "This website was created for my programming hobby, it created by using the following technology:",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     icons: [
-      { src: cpp, alt: "cpp" },
       { src: css, alt: "css" },
       { src: html, alt: "html" },
       { src: js, alt: "js" },
-      { src: opencv, alt: "opencv" },
-      { src: opengl, alt: "opengl" },
-      { src: python, alt: "python" },
       { src: tailwind, alt: "tailwind" },
-      { src: django, alt: "django" },
       { src: expressjs, alt: "expressjs" },
     ],
     imageUrl: benefitImage2,
