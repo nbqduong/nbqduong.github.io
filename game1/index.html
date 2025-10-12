@@ -1,12 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>PassIt WebAssembly</title>
+    <meta charset="utf-8">
+    <style>
+        body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+        #canvas { border: 1px solid #ccc; background-color: black; display: block; margin: 20px auto; }
+        #output { font-family: monospace; background-color: #333; color: #fff; padding: 10px; margin: 20px auto; width: 80%; max-height: 300px; overflow-y: auto; white-space: pre-wrap; }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my first HTML page!</p>
+    <div style="text-align: center;">
+        <h1>PassIt - WebAssembly Version</h1>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <div id="output">Loading...</div>
+    </div>
+    
+    <script>
+        var Module = {
+            canvas: document.getElementById('canvas'),
+            preRun: [function() {
+                console.log('PreRun: Checking file system...');
+                document.getElementById('output').innerHTML += 'PreRun: Checking file system...\n';
+                
+                // List all preloaded files
+                if (typeof FS !== 'undefined') {
+                    try {
+                        var files = FS.readdir('/');
+                        console.log('Root directory files:', files);
+                        document.getElementById('output').innerHTML += 'Root files: ' + files.join(', ') + '\n';
+                        
+                        // Check for specific asset files
+                        var assetFiles = ['BasicHero.png', 'Myfont.ttf', 'SnakeH.png', 'SnakeV.png', 'tree.png', 'WaterDropped.png', 'SimpleHero.png'];
+                        assetFiles.forEach(function(file) {
+                            try {
+                                var stat = FS.stat('/' + file);
+                                console.log('Found asset:', file, 'Size:', stat.size);
+                                document.getElementById('output').innerHTML += 'Found: ' + file + ' (' + stat.size + ' bytes)\n';
+                            } catch (e) {
+                                console.log('Missing asset:', file);
+                                document.getElementById('output').innerHTML += 'MISSING: ' + file + '\n';
+                            }
+                        });
+                    } catch (e) {
+                        console.log('Error checking filesystem:', e);
+                        document.getElementById('output').innerHTML += 'FS Error: ' + e.message + '\n';
+                    }
+                }
+            }],
+            postRun: [function() {
+                console.log('PostRun called');
+                document.getElementById('output').innerHTML += 'PostRun called\n';
+            }],
+            print: function(text) {
+                console.log('STDOUT:', text);
+                var output = document.getElementById('output');
+                output.innerHTML += 'OUT: ' + text + '\n';
+                output.scrollTop = output.scrollHeight;
+            },
+            printErr: function(text) {
+                console.error('STDERR:', text);
+                var output = document.getElementById('output');
+                output.innerHTML += 'ERR: ' + text + '\n';
+                output.scrollTop = output.scrollHeight;
+            },
+            onRuntimeInitialized: function() {
+                console.log('Runtime initialized successfully');
+                document.getElementById('output').innerHTML += 'Runtime initialized\n';
+            },
+            onAbort: function(what) {
+                console.error('Module aborted:', what);
+                document.getElementById('output').innerHTML += 'ABORT: ' + what + '\n';
+            }
+        };
+    </script>
+    <script src="main.js"></script>
 </body>
 </html>
