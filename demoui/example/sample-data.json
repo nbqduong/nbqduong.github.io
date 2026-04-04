@@ -2,25 +2,25 @@
   {
     "title": "Premium features",
     "items": [
-      { "title": "Premium showcase" },
-      { "title": "Partner automation" }
+      { "title": "User will love this" },
+      { "title": "Some other choices" }
     ]
   },
   {
     "title": "Recent projects",
     "items": [
-      { "title": "Project Aurora" },
-      { "title": "Project Drift" },
-      { "title": "Project Redwood" },
-      { "title": "Project Nova" }
+      { "title": "Project A" },
+      { "title": "Project B" },
+      { "title": "Project C" },
+      { "title": "Project D" }
     ]
   },
   {
     "title": "Template projects",
     "items": [
-      { "title": "Mix showcase" },
-      { "title": "Global launchpad" },
-      { "title": "Coverage heatmap" }
+      { "title": "Cool project to start" },
+      { "title": "Cool but heavy that require premium" },
+      { "title": "Cool but heavy that require premium" }
     ]
   }
 ]
