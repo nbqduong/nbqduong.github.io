@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Premium features",
+    "items": [
+      { "title": "Premium showcase" },
+      { "title": "Partner automation" }
+    ]
+  },
+  {
+    "title": "Recent projects",
+    "items": [
+      { "title": "Project Aurora" },
+      { "title": "Project Drift" },
+      { "title": "Project Redwood" },
+      { "title": "Project Nova" }
+    ]
+  },
+  {
+    "title": "Template projects",
+    "items": [
+      { "title": "Mix showcase" },
+      { "title": "Global launchpad" },
+      { "title": "Coverage heatmap" }
+    ]
+  }
+]
